@@ -1,14 +1,45 @@
 <h1>AJAX</h1>
 <p>Find me in app/views/ajax/home.html.erb</p>
+
 <div id="rest-ops">
-<button id="list-users" type="button">List users</button><br>
-<label>username</label><input id="user-username"><label>password</label>
-<input id="user-password"><button id="create-user" type="button">Create user</button><br>
-<label>user_id</label><input id="user-id" type="number"><label>username</label>
-<input id="user-username1"><label>password</label>
-<input id="user-password1"><button id="update-user" type="button">Update user</button><br>
+
+   <button id="list-users" type="button">List users</button><br><br>
+   
+   <label>username</label> <input id="user-username">
+   <label>password</label> <input id="user-password">
+   <button id="create-user" type="button">Create user</button><br><br>
+
+   <label>user_id</label> <input id="user-id" type="number">
+   <label>username</label> <input id="user-username1">
+   <label>password</label> <input id="user-password1">
+   <button id="update-user" type="button">Update user</button><br><br>
+   
+   <label>user_id</label> <input id="user-id-delete" type="number">
+   <button id="delete-user" type="button">Delete user</button><br><br>
+
+   <hr><br>
+
+   <button id="list-fact" type="button">List fact</button> 
+   <label>user_id</label> <input id="user-fact-list" type="number"><br><br>
+
+   <label>user_id</label> <input id="user-fact-id" type="number">
+   <label>fact</label> <input id="user-fact">
+   <label>likes</label> <input id="user-likes" type="number">
+   <button id="create-fact" type="button">Create fact</button><br><br>
+
+   <label>user_id</label> <input id="update-user-fact-id" type="number">
+   <label>fact_id</label> <input id="update-fact-id" type="number">
+   <label>fact</label> <input id="user-fact1">
+   <label>likes</label> <input id="user-likes1" type="number">
+   <button id="update-fact" type="button">Update fact</button><br><br>
+
+   <label>user_id</label> <input id="user-fact-id-delete" type="number">
+   <label>fact_id</label> <input id="fact-id-delete" type="number">
+   <button id="delete-fact" type="button">Delete fact</button><br><br>
 </div>
+
 <div id="results-div"></div>
+
 <script>
-document.addEventListener('DOMContentLoaded', handle_ajax(event));
+   document.addEventListener('DOMContentLoaded', handle_ajax(event));
 </script>
